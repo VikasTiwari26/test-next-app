@@ -23,28 +23,28 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head />
-                    
+
                 <body>
                     <Main />
                     <NextScript />
                 </body>
                 <script src="/assets/js/modernizr-2.6.2.min.js" defer ></script>
 
-                    <script src="/assets/js/jquery-1.10.2.min.js" defer ></script>
-                    <script src="/bootstrap/js/bootstrap.min.js" defer ></script>
-                    <script src="/assets/js/bootstrap-select.min.js" defer ></script>
-                    <script src="/assets/js/bootstrap-hover-dropdown.js" defer ></script>
+                <script src="/assets/js/jquery-1.10.2.min.js" defer ></script>
+                <script src="/bootstrap/js/bootstrap.min.js" defer ></script>
+                <script src="/assets/js/bootstrap-select.min.js" defer ></script>
+                <script src="/assets/js/bootstrap-hover-dropdown.js" defer ></script>
 
-                    <script src="/assets/js/easypiechart.min.js" defer ></script>
-                    <script src="/assets/js/jquery.easypiechart.min.js" defer ></script>
+                <script src="/assets/js/easypiechart.min.js" defer ></script>
+                <script src="/assets/js/jquery.easypiechart.min.js" defer ></script>
 
-                    <script src="/assets/js/owl.carousel.min.js" defer ></script>
-                    <script src="/assets/js/wow.js" defer ></script>
+                <script src="/assets/js/owl.carousel.min.js" defer ></script>
+                <script src="/assets/js/wow.js" defer ></script>
 
-                    <script src="/assets/js/icheck.min.js" defer ></script>
-                    <script src="/assets/js/price-range.js" defer ></script>
+                <script src="/assets/js/icheck.min.js" defer ></script>
+                <script src="/assets/js/price-range.js" defer ></script>
 
-                    <script src="/assets/js/main.js" defer ></script>
+                <script src="/assets/js/main.js" defer ></script>
             </Html>
         )
     }

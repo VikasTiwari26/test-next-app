@@ -48,7 +48,7 @@ $(document).ready(function () {
                 // itemsDesktopSmall : false,
                 // itemsTablet: false,
                 // itemsMobile : false 
-    },300);
+    },500);
    })
     $("#prop-smlr-slide_0").owlCarousel({
         navigation: false, // Show next and prev buttons
@@ -66,10 +66,13 @@ $(document).ready(function () {
         items: 3
     });
 
+   setTimeout(()=>{
     $('#price-range').slider();
     $('#property-geo').slider();
     $('#min-baths').slider();
     $('#min-bed').slider();
+   },500)
+
 
     var RGBChange = function () {
         $('#RGB').css('background', '#FDC600')

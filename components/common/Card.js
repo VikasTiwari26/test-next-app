@@ -2,21 +2,21 @@ import React from 'react';
 
 import dynamic from "next/dynamic"
 import { useRouter } from 'next/router'
-import property2 from '../../public/assets/img/demo/property-2.jpg'
-import bed from '../../public/assets/img/icon/bed.png'
-import shawer from '../../public/assets/img/icon/shawer.png'
-import cars from '../../public/assets/img/icon/cars.png'
+import { bed, cars, property2, shawer } from '../../utils/images';
 const NextImage = dynamic(() => import("next/image"))
 
 const Card = (props) => {
     const router = useRouter()
-    const { key, title, area, price, description } = props
+    const { keyValue, title, area, price, description,id,bedrooms,bathrooms,garages } = props
+    const gotoDetailPage =(id)=>{
+        router.push(`/property-detail?id=${id}`)
+    }
     return (
         <>
-            <div className="col-sm-6 col-md-3 p0" key={key ? key : ''}>
+            <div onClick={()=>gotoDetailPage(id)} className="col-sm-6 col-md-3 p0" key={keyValue ? keyValue : ''}>
                 <div className="box-two proerty-item">
                     <div className="item-thumb">
-                        <a href="property-1.html" >
+                        <a >
                             <NextImage src={property2} />
                             {/* <img src="assets/img/demo/property-2.jpg" /> */}
                         </a>
@@ -30,11 +30,11 @@ const Card = (props) => {
                         <p style={{ display: 'none' }}>{description}</p>
                         <div className="property-icon">
                             {/* <img src="assets/img/icon/bed.png" />(5)| */}
-                            <NextImage src={bed} />(5)|
+                            <NextImage src={bed} />({bedrooms})|
                             {/* <img src="assets/img/icon/shawer.png" />(2)| */}
-                            <NextImage src={shawer} />(2)|
+                            <NextImage src={shawer} />({bathrooms})|
                             {/* <img src="assets/img/icon/cars.png" />(1) */}
-                            <NextImage src={cars} />(1)
+                            <NextImage src={cars} />({garages})
                         </div>
                     </div>
 

@@ -14,6 +14,8 @@ import '../public/assets/css/owl.transitions.css'
 import '../public/assets/css/style.css'
 import '../public/assets/css/responsive.css'
 import '../styles/globals.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
